@@ -57,6 +57,30 @@ body {
   background-color: #ecf0f3;
   padding: 15px;
   margin: 15px 20px 0 0;
+  position: relative;
+}
+
+.tree__subtree-title::before {
+  content: "";
+  background: #158e8d;
+  width: 2px;
+  height: 97px;
+  position: absolute;
+  right: -20px;
+  top: -32px;
+  z-index: 99;
+}
+
+.tree__subtree-title::after {
+  content: "";
+  position: absolute;
+  right: -19px;
+  top: 25px;
+  z-index: 99;
+  border-style: solid;
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #158e8d;
+  border-width: 9px;
 }
 
 .tree__subtree-title .btn {
@@ -76,7 +100,32 @@ body {
           justify-content: space-between;
   background-color: #ecf0f3;
   padding: 15px;
-  margin: 15px 35px 0 0;
+  margin: 15px 75px 0 0;
+  position: relative;
+}
+
+.tree__subtreeson-title::before {
+  content: "";
+  background: #ecf0f3;
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  right: -25px;
+  top: -32px;
+  z-index: 99;
+}
+
+.tree__subtreeson-title::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 25px;
+  z-index: 99;
+  border-color: #ecf0f3;
+  border-style: solid;
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #ecf0f3;
+  border-width: 9px;
 }
 
 .tree__subtreeson-title .btn {
@@ -96,7 +145,32 @@ body {
           justify-content: space-between;
   background-color: #ecf0f3;
   padding: 15px;
-  margin: 15px 45px 0 0;
+  margin: 15px 145px 0 0;
+  position: relative;
+}
+
+.tree__grandson-title::before {
+  content: "";
+  background: #ecf0f3;
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  right: -25px;
+  top: -32px;
+  z-index: 99;
+}
+
+.tree__grandson-title::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 25px;
+  z-index: 99;
+  border-color: #ecf0f3;
+  border-style: solid;
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #ecf0f3;
+  border-width: 9px;
 }
 
 .tree__grandson-title .btn {
